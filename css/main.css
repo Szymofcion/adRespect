@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  background-color: gray;
+  background-color: white;
   height: 100vh;
 }
 
@@ -29,11 +29,6 @@ body {
   border: 1px solid transparent;
   cursor: pointer;
   z-index: 101;
-}
-.burger-btn:focus {
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
 }
 .burger-btn:hover .burger-btn__bars::after,
 .burger-btn:hover .burger-btn__bars::before {
@@ -75,7 +70,7 @@ body {
   width: 100%;
   transform: translateX(100%);
   transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
-  background-color: white;
+  background: #dcc1ab;
   z-index: 100;
 }
 .nav--active {
@@ -89,6 +84,9 @@ body {
   padding: 0.5em 0;
   font-size: 2.8em;
   text-decoration: none;
+}
+.nav__item-menu:hover {
+  background-color: #c7ae9a;
 }
 .nav__item::before {
   position: absolute;
@@ -104,6 +102,61 @@ body {
   transform: scaleY(1);
 }
 
+.nav__item2 {
+  position: relative;
+  display: block;
+  color: black;
+  margin: 0.5em 2em;
+  padding: 0.5em 0;
+  font-size: 2.8em;
+  text-decoration: none;
+}
+.nav__item2-menu:hover {
+  background-color: #c7ae9a;
+}
+.nav__item2::before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  transition: transform 0.3s;
+  content: "";
+}
+.nav__item2:hover::before {
+  transform: scaleY(1);
+}
+
+.menu {
+  display: inline-block;
+  cursor: pointer;
+}
+.menu__dropdown-list {
+  display: none;
+  opacity: 0;
+  transition: color 0.3s;
+}
+.menu__dropdown-list:hover {
+  color: black;
+  display: block;
+}
+
+.menu:hover .menu__dropdown-list {
+  display: block;
+  animation: menu 0.5s forwards;
+}
+
+@keyframes menu {
+  from {
+    opacity: 0;
+    transform: rotate(36deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
 @keyframes navItemsAnimation {
   from {
     transform: translateX(200%);
@@ -118,6 +171,6 @@ body {
 
 .black-bars-color,
 .black-bars-color::after,
-.black-bard-color::before {
+.black-bars-color::before {
   background-color: black;
 }/*# sourceMappingURL=main.css.map */
