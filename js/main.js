@@ -3,11 +3,15 @@ const navItem2 = document.querySelector(".nav__item2");
 const navBtn = document.querySelector(".burger-btn");
 const allNavItems = document.querySelectorAll(".nav__item");
 const navBtnBars = document.querySelector(".burger-btn__bars");
+const menuDropdown = document.querySelector(".menu__dropdown-list"); ///?
+const magnify = document.querySelector(".fa-magnifying-glass"); ///?
+
 
 const handleNav = () => {
   nav.classList.toggle("nav--active");
   navBtnBars.classList.remove("black-bars-color");
   navItem2.classList.toggle("nav-items-animation");
+  magnify.classList.toggle("nav-items-animation");
   allNavItems.forEach((item) => {
     item.classList.toggle("nav-items-animation");
   });
@@ -15,6 +19,7 @@ const handleNav = () => {
     item.addEventListener("click", () => {
       nav.classList.remove("nav--active");
       navItem2.classList.remove("nav-items-animation");
+      magnify.classList.remove("nav-items-animation");
       allNavItems.forEach((item) => {
         item.classList.remove("nav-items-animation");
       });
