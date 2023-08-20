@@ -312,24 +312,10 @@ a {
 .banner {
   background-color: #1b5b31;
   color: #ffffff;
+  margin: 0 2em;
 }
 .banner__top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding: 0 3em;
-}
-.banner__top-container--title {
-  font-size: 3em;
-  margin-bottom: 0.4em;
-}
-.banner__top-container--description {
-  font-size: 1em;
-}
-.banner__top-button {
-  width: 100%;
-  margin-top: 2em;
 }
 .banner__top-button--white {
   padding: 6px 12px 7px 12px;
@@ -339,13 +325,50 @@ a {
   color: #1b5b31;
 }
 .banner__bottom {
-  height: 50vh;
-  width: 100%;
   background-image: url("../assets/china_small.jpg");
-  background-size: cover;
-  background-position: center;
 }
-.banner__bottom-container {
+
+.footer {
+  background-color: #111111;
+  color: #ffffff;
+}
+.footer__top {
+  padding: 0 0em 3em 0em;
+  margin: 0 3em;
+}
+.footer__top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100%;
+}
+.footer__top-container--title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__top-container--description {
+  font-size: 1em;
+}
+.footer__top-button--green {
+  padding: 6px 12px 7px 12px;
+  border-radius: 200px;
+  border: 1px solid #1b5b31;
+  background-color: #1b5b31;
+  color: #ffffff;
+}
+.footer__bottom {
+  width: 100%;
+  margin-top: 2em;
+}
+.footer__bottom-info--logo {
+  width: 6rem;
+  height: 2rem;
+}
+.footer .line {
+  margin: 2em 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
