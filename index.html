@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-
     <button class="burger-btn">
       <div class="burger-btn__box">
         <div class="burger-btn__bars black-bars-color"></div>
@@ -41,8 +40,8 @@
         </button>
       </div>
     </nav>
-  
-   <header class="header section">
+
+    <header class="header section">
       <div class="header__top pt-5">
         <div class="header__top-container">
           <h1 class="header__top-container--title fw-bold">
@@ -75,8 +74,8 @@
           </div>
         </div>
       </div>
-    </header> 
-     <section class="offer p-4">
+    </header>
+    <section class="offer p-4">
       <div class="offer__top m-4">
         <p class="offer__top-offer">oferta</p>
         <h2 class="offer__top-title fw-bold fs-1">
@@ -132,8 +131,30 @@
           </div>
         </div>
       </div>
-    </section> 
-  
+    </section>
+
+    <section class="project">
+      <div class="project__top">
+        <p>Realizacje</p>
+        <h2>Nasze projekty</h2>
+      </div>
+      <div class="project__bottom" id="masonry-container">
+        <div class="grid-sizer"></div>
+        <img src="https://picsum.photos/200/300?random=1" alt="" />
+        <img src="./assets/china_large.jpg" alt="" />
+        <img src="https://picsum.photos/200/300?random=3" alt="" />
+        <img src="./assets/china_large.jpg" alt="" />
+        <img src="https://picsum.photos/200/300?random=5" alt="" />
+        <img src="./assets/garden.jpg" alt="" />
+      </div>
+      <div class="project__container">
+        <button class="project__container-button">
+          Rozwiń <i class="fa-solid fa-arrow-down"></i>
+        </button>
+      </div>
+      <div class="shadow"></div>
+    </section>
+
     <section class="aboutus section mt-5">
       <div class="aboutus__bottom pl-5">
         <div class="aboutus__bottom-container">
@@ -165,22 +186,21 @@
     </section>
 
     <section class="banner section mt-5 p-4">
-      <div class="banner__top pt-5 ">
+      <div class="banner__top pt-5">
         <div class="banner__top-container">
-          <h3 class="banner__top-container--title fs-1 ">
+          <h3 class="banner__top-container--title fs-1">
             Zostańmy w kontakcie! Znajdziesz nas na <br />
             <span class="fst-italic">Instagramie.</span>
           </h3>
           <p class="banner__top-container--description"></p>
-            Śledź nasze najnowsze realizacje!
-          </p>
+          Śledź nasze najnowsze realizacje!
         </div>
         <div class="banner__top-button mb-5">
           <button class="banner__top-button--white">Instagram</button>
         </div>
       </div>
-    </section> 
-   
+    </section>
+
     <section class="footer section mt-5">
       <div class="footer__top pt-5">
         <div class="footer__top-container">
@@ -223,6 +243,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
