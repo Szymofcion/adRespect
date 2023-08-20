@@ -8,6 +8,8 @@ const magnify = document.querySelector(".fa-magnifying-glass"); ///
 const container = document.querySelector(".project__bottom");
 const newImgButton = document.querySelector(".project__container-button");
 
+AOS.init();
+
 const handleNav = () => {
   nav.classList.toggle("nav--active");
   navBtnBars.classList.remove("black-bars-color");
@@ -103,5 +105,5 @@ document.addEventListener("DOMContentLoaded", function () {
   prevButton.addEventListener("click", prevSlide);
   nextButton.addEventListener("click", nextSlide);
 
-  showSlide(currentSlide)
+  showSlide(currentSlide);
 });
