@@ -1,0 +1,44 @@
+@media (max-width: 576px) {
+  .nav__desktop {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  .burger-btn {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .nav__desktop {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #ffffff;
+    z-index: 100;
+    padding: 1.2em;
+    &-logo {
+        margin-left: 5em;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      margin: 0.8em;
+      list-style: none;
+      &--lists {
+        text-decoration: none;
+        .menu__dropdown {
+          display: none;
+        }
+      }
+      .nav__item2{
+        margin-right: 5em;
+      }
+    }
+  }
+}

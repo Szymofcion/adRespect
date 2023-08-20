@@ -16,8 +16,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet"href="./css/mediaQueries.css">
   </head>
   <body>
+    
     <button class="burger-btn">
       <div class="burger-btn__box">
         <div class="burger-btn__bars black-bars-color"></div>
@@ -28,21 +30,43 @@
         <li class="nav__item2 menu" href="">
           Oferta >
           <ul class="menu__dropdown">
-            <a class="menu__dropdown-list" href="#">oferta 1</a>
-            <a class="menu__dropdown-list" href="#">oferta 2</a>
-            <a class="menu__dropdown-list" href="#">oferta 3</a>
+            <a class="menu__dropdown-list" href="#main">oferta 1</a>
+            <a class="menu__dropdown-list" href="#main">oferta 2</a>
+            <a class="menu__dropdown-list" href="#main">oferta 3</a>
           </ul>
         </li>
-        <a class="nav__item" href="#">O firmie</a>
-        <a class="nav__item" href="#">Realizacje</a>
-        <a class="nav__item" href="#">Kontakt</a>
+        <a class="nav__item" href="#aboutus">O firmie</a>
+        <a class="nav__item" href="#project">Realizacje</a>
+        <a class="nav__item" href="#footer">Kontakt</a>
         <button class="nav__item2 button-magnifying">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
     </nav>
+    <nav class="nav__desktop">
+        <div class="nav__desktop-logo">
+          <p class="fs-2"><span class="fw-bold">giard</span>design</p>
+        </div>
+        <div class="nav__desktop-item">
+          <li class="nav__desktop-item--lists menu fs-4" href="">
+            Oferta >
+            <ul class="menu__dropdown">
+              <a class="menu__dropdown-list" href="#main">oferta 1</a>
+              <a class="menu__dropdown-list" href="#main">oferta 2</a>
+              <a class="menu__dropdown-list" href="#main">oferta 3</a>
+            </ul>
+          </li>
+          <a class="nav__desktop-item fs-4" href="#aboutus">O firmie</a>
+          <a class="nav__desktop-item fs-4" href="#project">Realizacje</a>
+          <a class="nav__desktop-item fs-4" href="#footer">Kontakt</a>
+          <button class="nav__item2 button-magnifying">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      
+    </nav>
 
-    <header class="header section slider">
+    <header class="header section slider" id="main">
       <div class="slides" id="#slides">
         <div class="slide">
           <div class="header__top pt-5">
@@ -101,7 +125,7 @@
       </div>
     </header>
 
-    <section class="offer p-4">
+    <section class="offer p-4" id="offer">
       <div class="offer__top m-4">
         <p class="offer__top-offer">oferta</p>
         <h2 class="offer__top-title fw-bold fs-1">
@@ -114,8 +138,8 @@
           na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
         </p>
       </div>
-      <div class="offer__bottom row pt-5" data-aos="fade-right">
-        <div class="offer__bottom-box col-md-4 pt-2" div data-aos="fade-left" data-aos-duration="500"></div>>
+      <div class="offer__bottom row pt-5" >
+        <div class="offer__bottom-box col-md-4" data-aos="fade-up-left" data-aos-duration="800">
           <div class="d-flex flex-column">
             <i class="fa-solid fa-pen"></i>
             <h3 class="mt-3 fw-bold">Projekty</h3>
@@ -130,7 +154,7 @@
             ></a>
           </div>
         </div>
-        <div class="offer__bottom-box col-md-4 pt-4" data-aos="fade-up-right" data-aos-duration="900">
+        <div class="offer__bottom-box col-md-4 " data-aos="fade-up-right" data-aos-duration="900">
           <i class="fa-solid fa-eye"></i>
           <h3 class="mt-3 fw-bold">Wizualizacja</h3>
           <span
@@ -143,7 +167,7 @@
             ></a>
           </div>
         </div>
-        <div class="offer__bottom-box col-md-4 pt-4" data-aos="fade-up-left" data-aos-duration="1100">
+        <div class="offer__bottom-box col-md-4 " data-aos="fade-up-left" data-aos-duration="1100">
           <i class="fa-solid fa-star"></i>
           <h3 class="mt-3 fw-bold">Realizacje</h3>
           <span
@@ -159,30 +183,10 @@
       </div>
     </section>
 
-    <section class="project">
-      <div class="project__top">
-        <p>Realizacje</p>
-        <h2>Nasze projekty</h2>
-      </div>
-      <div class="project__bottom" id="masonry-container">
-        <div class="grid-sizer"></div>
-        <img class="img-scale" src="https://picsum.photos/200/300?random=1" alt="" />
-        <img class="img-scale" src="./assets/china_large.jpg" alt="" />
-        <img class="img-scale" src="https://picsum.photos/200/300?random=3" alt="" />
-        <img class="img-scale" src="./assets/china_large.jpg" alt="" />
-        <img class="img-scale" src="https://picsum.photos/200/300?random=5" alt="" />
-        <img class="img-scale" src="./assets/garden.jpg" alt="" />
-      </div>
-      <div class="project__container">
-        <button class="project__container-button">
-          Rozwiń <i class="fa-solid fa-arrow-down"></i>
-        </button>
-      </div>
-      <div class="shadow"></div>
-    </section>
+   
 
-    <section class="aboutus section mt-5">
-      <div class="aboutus__bottom pl-5" data-aos="flip-up" data-aos-duration="1100">
+    <section class="aboutus section mt-5" id="aboutus">
+      <div class="aboutus__bottom pl-5">
       </div>
       <div class="aboutus__top pt-5">
         <div class="aboutus__top-container">
@@ -207,8 +211,28 @@
         </div>
       </div>
     </section>
-
-    <section class="banner section mt-5 p-4">
+    <section class="project" id="project">
+      <div class="project__top">
+        <p class="project__top-project">Realizacje</p>
+        <h2 class="project__top-title fs-1 fw-bold" >Nasze <span class="fst-italic">projekty</span> </h2>
+      </div>
+      <div class="project__bottom" id="masonry-container">
+        <div class="grid-sizer"></div>
+        <img class="img-scale" src="https://picsum.photos/200/300?random=1" alt="" />
+        <img class="img-scale" src="./assets/china_large.jpg" alt="" />
+        <img class="img-scale" src="https://picsum.photos/200/300?random=3" alt="" />
+        <img class="img-scale" src="./assets/china_large.jpg" alt="" />
+        <img class="img-scale" src="https://picsum.photos/200/300?random=5" alt="" />
+        <img class="img-scale" src="./assets/garden.jpg" alt="" />
+      </div>
+      <div class="project__container">
+        <button class="project__container-button">
+          Rozwiń <i class="fa-solid fa-arrow-down"></i>
+        </button>
+      </div>
+      <div class="shadow"></div>
+    </section>
+    <section class="banner section mt-5 p-4" id="banner">
       <div class="banner__top pt-5">
         <div class="banner__top-container mb-4">
           <h3 class="banner__top-container--title fs-1">
@@ -224,7 +248,7 @@
       </div>
     </section>
 
-    <section class="footer section mt-5">
+    <section class="footer section mt-5" id="footer">
       <div class="footer__top pt-5">
         <div class="footer__top-container">
           <p class="footer__top-container--title fs-4">
