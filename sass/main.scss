@@ -195,6 +195,21 @@ a {
   height: 100vh;
   width: 100%;
   background-color: #dcc1ab;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  .slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .slide {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    .controller {
+      position: absolute;
+      right: 0;
+    }
+  }
   &__top {
     height: 50vh;
     width: 100%;
@@ -235,23 +250,30 @@ a {
   &__bottom {
     height: 50vh;
     width: 100%;
-    background-image: url("../assets/garden.jpg");
     background-size: cover;
     &-container {
       width: 100%;
       height: 100%;
       &--button {
+        cursor: pointer;
         padding: 2.2em;
         border: none;
+        transition: background-color 0.3s;
+      }
+      &--button:hover,
+      &--button:active {
+        background-color: gray;
       }
     }
   }
 }
-.header__bottom-container2 {
-  height: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: end;
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /// offer
@@ -331,7 +353,12 @@ a {
 .grid-item--width2 {
   width: 400px;
 }
-
+.img-scale {
+  transition: transform 0.3s;
+}
+.img-scale:hover {
+  transform: scale(1.2);
+}
 // banner
 
 .banner {

@@ -51,8 +51,8 @@ var macyInstance = Macy({
     y: 20,
   },
 });
-newImgButton.addEventListener("click", function () {
-  for (let i = 0; i < 3; i++) {
+newImgButton.addEventListener("click", () => {
+  for (let i = 0; i < 6; i++) {
     const newImage = document.createElement("img");
     newImage.src = "https://picsum.photos/200/300?random=13";
     newImage.alt = "";
@@ -64,4 +64,44 @@ newImgButton.addEventListener("click", function () {
     document.querySelector("#masonry-container").appendChild(newImage);
     macyInstance.recalculate();
   }
+});
+
+///Slider
+
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".slide");
+  const prevButton = document.getElementById("prev");
+  const nextButton = document.getElementById("next");
+  let currentSlide = 0;
+
+  function showSlide(slideIndex) {
+    if (slideIndex < 0) {
+      slideIndex = slides.length - 1;
+    } else if (slideIndex >= slides.length) {
+      slideIndex = 0;
+    }
+
+    slides.forEach((slide, index) => {
+      if (index === slideIndex) {
+        slide.style.display = "block";
+      } else {
+        slide.style.display = "none";
+      }
+    });
+
+    currentSlide = slideIndex;
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  prevButton.addEventListener("click", prevSlide);
+  nextButton.addEventListener("click", nextSlide);
+
+  showSlide(currentSlide)
 });
