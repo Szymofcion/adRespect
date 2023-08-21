@@ -231,6 +231,9 @@ a {
     &-button {
       width: 100%;
       margin-top: 2em;
+      button {
+        transition: 0.3s;
+      }
       &--green {
         margin-right: 1.5em;
         padding: 6px 12px 7px 12px;
@@ -239,12 +242,21 @@ a {
         background-color: #1b5b31;
         color: white;
       }
+      &--green:hover {
+        background-color: #1b5b3100;
+        color: #1b5b31;
+        border: 1px solid #1b5b31;
+      }
       &--white {
         padding: 6px 12px 7px 12px;
         border-radius: 200px;
         border: 1px solid #1b5b31;
         background-color: #1b5b3100;
         color: #1b5b31;
+      }
+      &--white:hover {
+        background-color: #1b5b31;
+        color: white;
       }
     }
   }
@@ -293,9 +305,21 @@ a {
   &__bottom {
     &-box {
       transition: 0.3s;
-      width: 350px;
+      padding: 3em;
+      background-color: #afaaaa42;
+      border-radius: 15px;
+      width: 400px;
+      margin: 2em;
       &--link {
         color: #1b5b31;
+      }
+      a {
+        cursor: pointer;
+        border-bottom: 1px solid #1b5b318f;
+        transition: 0.3s;
+      }
+      a:hover {
+        color: #ffffff;
       }
     }
     &-box:hover,
