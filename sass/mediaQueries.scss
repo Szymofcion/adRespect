@@ -99,7 +99,7 @@
 
 @media (min-width: 576px) {
   .header {
-    height: 88vh;
+    height: 92vh;
     &__top {
       height: 88vh;
 
@@ -340,7 +340,7 @@
       padding-bottom: 10em;
       &-button {
         padding: 12px 25px 12px 25px;
-        font-size: 2.5em;
+        font-size: 2em;
       }
     }
   }
@@ -409,11 +409,14 @@
 @media (min-width: 576px) {
   .footer {
     &__top {
+      margin: 3em 5em;
       &-container {
+        padding: 3em 0;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
         &--flex {
           flex-direction: row !important;
           justify-content: center;
@@ -425,74 +428,87 @@
         &--description {
           margin-right: 2em;
           margin-bottom: 0;
+          font-size: 1.2em;
         }
       }
-      &-button {
-        &--green {
+    }
+  }
+}
+@media (min-width: 765px) {
+  .footer {
+    &__top {
+      margin: 0em 12em;
+      &-container {
+        &--description {
+          font-size: 1.2em;
         }
       }
     }
     &__bottom {
-      &-info {
-        &--logo {
+      &-contact {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        width: 100%;
+        &--link {
+          a {
+            margin: 0 2em 0 0;
+          }
+        }
+        &--data {
+          span {
+            margin: 0 0 0 2em;
+          }
         }
       }
-    }
-    .line {
+      &-info {
+        padding-top: 9em;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+      }
     }
   }
 }
-// @media (min-width: 765px) {
-//   .banner {
-//     &__top {
-//       padding: 0 5em;
-//       &-container {
-//         &--flex {
-//           margin: 0 0 0 3.8em;
-//           display: flex;
-//           flex-direction: column;
-//         }
-//       }
-//     }
-//   }
-// }
 
-// @media (min-width: 1110px) {
-//   .banner {
-//     padding: 5em !important;
-//     margin: 5em 15em;
-//     &__top {
-//       &-container {
-//         width: 100%;
-//         &--title {
-//           font-size: 3.6em !important;
-//         }
-//         &--flex {
-//           display: flex;
-//           justify-content: end;
-//           width: 350px;
-//         }
-//         &--description {
-//           font-size: 2.8em !important;
-//         }
-//       }
-//       button {
-//         font-size: 1.8em !important;
-//       }
-//     }
-//   }
-// }
-// @media (min-width: 1600px) {
-//   .banner {
-//     &__top {
-//       &-container {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         &--flex {
-//           margin-left: 15em;
-//         }
-//       }
-//     }
-//   }
-// }
+@media (min-width: 1110px) {
+  .footer {
+    &__top {
+      padding: 0 12em 4em 12em;
+      &-container {
+        &--title {
+          font-size: 2em !important;
+        }
+        &--description {
+          font-size: 1.2em;
+        }
+      }
+      &__bottom {
+        &-contact {
+          display: flex;
+          flex-direction: row !important;
+          justify-content: space-between !important;
+          width: 100%;
+        }
+        &-info {
+          padding-top: 9em;
+          display: flex;
+          flex-direction: row !important;
+          justify-content: space-between !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .footer {
+    &__top {
+      &-container {
+        &--flex {
+          font-size: 1.6em;
+          padding: 12px 18px 12px 18px;
+        }
+      }
+    }
+  }
+}

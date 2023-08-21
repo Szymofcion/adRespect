@@ -544,14 +544,18 @@ a {
         font-size: 1em;
       }
     }
-    &-button {
-      &--green {
-        padding: 6px 12px 7px 12px;
-        border-radius: 200px;
-        border: 1px solid #1b5b31;
-        background-color: #1b5b31;
-        color: #ffffff;
-      }
+    button {
+      padding: 6px 12px 7px 12px;
+      border-radius: 200px;
+      border: 1px solid #1b5b31;
+      background-color: #1b5b31;
+      color: #ffffff;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #ffffff;
+      color: #1b5b31;
+      border: 1px solid #1b5b31;
     }
   }
   &__bottom {

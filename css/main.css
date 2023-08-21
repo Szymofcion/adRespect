@@ -514,12 +514,18 @@ a {
 .footer__top-container--description {
   font-size: 1em;
 }
-.footer__top-button--green {
+.footer__top button {
   padding: 6px 12px 7px 12px;
   border-radius: 200px;
   border: 1px solid #1b5b31;
   background-color: #1b5b31;
   color: #ffffff;
+  transition: 0.3s;
+}
+.footer__top button:hover {
+  background-color: #ffffff;
+  color: #1b5b31;
+  border: 1px solid #1b5b31;
 }
 .footer__bottom {
   width: 100%;
