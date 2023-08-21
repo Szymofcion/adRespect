@@ -8,7 +8,11 @@ const magnify = document.querySelector(".fa-magnifying-glass"); ///
 const container = document.querySelector(".project__bottom");
 const newImgButton = document.querySelector(".project__container-button");
 
+///animacje
+
 AOS.init();
+
+///nav
 
 const handleNav = () => {
   nav.classList.toggle("nav--active");
@@ -41,6 +45,8 @@ const handleNavItemsAnimation = () => {
 handleNavItemsAnimation();
 navBtn.addEventListener("click", handleNav);
 
+/// macy
+
 var macyInstance = Macy({
   container: container,
   mobileFirst: true,
@@ -54,7 +60,7 @@ var macyInstance = Macy({
   },
 });
 newImgButton.addEventListener("click", () => {
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 4; i++) {
     const newImage = document.createElement("img");
     newImage.src = "https://picsum.photos/200/300?random=13";
     newImage.alt = "";
@@ -66,6 +72,14 @@ newImgButton.addEventListener("click", () => {
     document.querySelector("#masonry-container").appendChild(newImage);
     macyInstance.recalculate();
   }
+});
+
+///shadowMacy
+
+const btnShadow = document.querySelector(".project__container-button");
+const shadow = document.querySelector(".shadow");
+btnShadow.addEventListener("click", () => {
+  shadow.classList.remove("shadow");
 });
 
 ///Slider
@@ -107,3 +121,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showSlide(currentSlide);
 });
+
+///search
+
+const searchWrapper = document.querySelector(".search-wrapper");
+const searchIcon = document.querySelector(".search-icon");
+const searchInput = document.querySelector(".search-input");
+const searchBar = document.querySelector(".search-bar");
+
+searchWrapper.addEventListener("click", () => {
+  searchWrapper.classList.add("active");
+  searchInput.classList.add("active");
+  searchBar.classList.add("active");
+  searchInput.focus();
+});
+
+searchInput.addEventListener("blur", () => {
+  if (searchInput.value === "") {
+    searchWrapper.classList.remove("active");
+    searchInput.classList.remove("active");
+    searchBar.classList.remove("active");
+  }
+});
+
+/// lightbox

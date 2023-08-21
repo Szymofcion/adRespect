@@ -38,9 +38,8 @@
         <a class="nav__item" href="#aboutus">O firmie</a>
         <a class="nav__item" href="#project">Realizacje</a>
         <a class="nav__item" href="#footer">Kontakt</a>
-        <button class="nav__item2 button-magnifying">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+        
+      </div>
       </div>
     </nav>
     <nav class="nav__desktop">
@@ -59,13 +58,17 @@
           <a class="nav__desktop-item " href="#aboutus">O firmie</a>
           <a class="nav__desktop-item " href="#project">Realizacje</a>
           <a class="nav__desktop-item " href="#footer">Kontakt</a>
-          <button class="nav__item2 button-magnifying">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
+          <div class="search-container">
+            <div class="search-wrapper">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="text" class="search-input" placeholder="Szukaj...">
+                <div class="search-bar"></div>
+            </div>
         </div>
-      
+        </div>
     </nav>
-
     <header class="header section slider" id="main">
       <div class="slides" id="#slides">
         <div class="slide  d-md-flex">
@@ -224,11 +227,11 @@
       </div>
       <div class="project__bottom" id="masonry-container">
         <div class="grid-sizer"></div>
-        <img class="img-scale" src="https://picsum.photos/200/300?random=1" alt="" />
         <img class="img-scale" src="./assets/china_large.jpg" alt="" />
-        <img class="img-scale" src="https://picsum.photos/200/300?random=3" alt="" />
         <img class="img-scale" src="./assets/china_large.jpg" alt="" />
-        <img class="img-scale" src="https://picsum.photos/200/300?random=5" alt="" />
+        <img class="img-scale" src="./assets/garden.jpg" alt="" />
+        <img class="img-scale" src="./assets/china_large.jpg" alt="" />
+        <img class="img-scale" src="./assets/garden.jpg" alt="" />
         <img class="img-scale" src="./assets/garden.jpg" alt="" />
       </div>
       <div class="project__container">
@@ -263,12 +266,14 @@
           <p class="footer__top-container--title fs-4">
             <span class="fw-bold">giard</span>design
           </p>
-          <p class="footer__top-container--description">
-            Daj znać, co możemy dla Ciebie zrobić!
-          </p>
-          <button class="footer__top-button--green" data-aos="zoom-in" data-aos-duration="1500">
-            Skontaktuj się z nami
-          </button>
+          <div class="footer__top-container--flex d-flex flex-column">
+            <p class="footer__top-container--description">
+              Daj znać, co możemy dla Ciebie zrobić!
+            </p>
+            <button class="footer__top-button--green" data-aos="zoom-in" data-aos-duration="1500">
+              Skontaktuj się z nami
+            </button>
+          </div>
         </div>
         <div class="line"></div>
         <div class="footer__bottom d-flex justify-content-between">
@@ -302,5 +307,6 @@
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
+    
   </body>
 </html>

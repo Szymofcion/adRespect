@@ -390,24 +390,6 @@
     }
   }
 }
-@media (min-width: 1110px) {
-  .banner {
-    padding: 5em !important;
-    margin: 5em 15em;
-    &__top {
-      width: 100%;
-      justify-content: space-between !important;
-
-      &-container {
-        &--title {
-          font-size: 3.6em !important;
-        }
-        &--flex {
-        }
-      }
-    }
-  }
-}
 @media (min-width: 1600px) {
   .banner {
     &__top {
@@ -422,3 +404,95 @@
     }
   }
 }
+//footer
+
+@media (min-width: 576px) {
+  .footer {
+    &__top {
+      &-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &--flex {
+          flex-direction: row !important;
+          justify-content: center;
+          align-items: center;
+        }
+        &--title {
+          margin-bottom: 0;
+        }
+        &--description {
+          margin-right: 2em;
+          margin-bottom: 0;
+        }
+      }
+      &-button {
+        &--green {
+        }
+      }
+    }
+    &__bottom {
+      &-info {
+        &--logo {
+        }
+      }
+    }
+    .line {
+    }
+  }
+}
+// @media (min-width: 765px) {
+//   .banner {
+//     &__top {
+//       padding: 0 5em;
+//       &-container {
+//         &--flex {
+//           margin: 0 0 0 3.8em;
+//           display: flex;
+//           flex-direction: column;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (min-width: 1110px) {
+//   .banner {
+//     padding: 5em !important;
+//     margin: 5em 15em;
+//     &__top {
+//       &-container {
+//         width: 100%;
+//         &--title {
+//           font-size: 3.6em !important;
+//         }
+//         &--flex {
+//           display: flex;
+//           justify-content: end;
+//           width: 350px;
+//         }
+//         &--description {
+//           font-size: 2.8em !important;
+//         }
+//       }
+//       button {
+//         font-size: 1.8em !important;
+//       }
+//     }
+//   }
+// }
+// @media (min-width: 1600px) {
+//   .banner {
+//     &__top {
+//       &-container {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         &--flex {
+//           margin-left: 15em;
+//         }
+//       }
+//     }
+//   }
+// }

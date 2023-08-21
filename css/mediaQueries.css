@@ -312,19 +312,6 @@
     font-size: 1.8em !important;
   }
 }
-@media (min-width: 1110px) {
-  .banner {
-    padding: 5em !important;
-    margin: 5em 15em;
-  }
-  .banner__top {
-    width: 100%;
-    justify-content: space-between !important;
-  }
-  .banner__top-container--title {
-    font-size: 3.6em !important;
-  }
-}
 @media (min-width: 1600px) {
   .banner__top-container {
     display: flex;
@@ -333,5 +320,25 @@
   }
   .banner__top-container--flex {
     margin-left: 15em;
+  }
+}
+@media (min-width: 576px) {
+  .footer__top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__top-container--flex {
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__top-container--title {
+    margin-bottom: 0;
+  }
+  .footer__top-container--description {
+    margin-right: 2em;
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=mediaQueries.css.map */
