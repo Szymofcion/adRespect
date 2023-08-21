@@ -33,6 +33,7 @@
       margin: 0.8em;
       list-style: none;
       color: black;
+      font-size: 1em;
       a {
         transition: 0.3s;
       }
@@ -58,40 +59,37 @@
   }
 }
 @media (min-width: 720px) {
-
   .nav__desktop {
-    &-logo {
-
-      p {
-        margin-bottom: 0;
+    &-item {
+      font-size: 1.2em;
+      margin: 0.5em 1.1em;
+      &--lists {
+        font-size: 1.2em;
+        margin: 0.5em 1.1em;
       }
     }
+  }
+}
+@media (min-width: 1140px) {
+  .nav__desktop {
     &-item {
-      display: flex;
-      align-items: center;
-      margin: 0.8em;
-      list-style: none;
-      color: black;
-      a {
-        transition: 0.3s;
-      }
-      a:hover {
-        color: #1b5b31;
-      }
+      font-size: 1.4em;
+      margin: 0.5em 2em;
       &--lists {
-        text-decoration: none;
-        cursor: pointer;
-        transition: 0.3s;
-        .menu__dropdown {
-          display: none;
-        }
+        font-size: 1.4em;
+        margin: 0.5em 2em;
       }
-      &--lists:hover {
-        color: #1b5b31;
-      }
-      .nav__item2 {
-        margin-right: 5em;
-        border: none;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .nav__desktop {
+    &-item {
+      font-size: 1.4em;
+      margin: 0.5em 4em;
+      &--lists {
+        font-size: 1.4em;
+        margin-right: 4em;
       }
     }
   }
@@ -225,6 +223,200 @@
         }
         a {
           font-size: 2em;
+        }
+      }
+    }
+  }
+}
+
+/// aboutus
+
+@media (min-width: 576px) {
+  .aboutus {
+    height: 88vh;
+    &__top {
+      height: 88vh;
+
+      &-container {
+        &-offer {
+          font-size: 1.2em;
+        }
+        &--title {
+          font-size: 3.5em;
+        }
+        &--description {
+          font-size: 1.4em;
+        }
+      }
+      &-button {
+        font-size: 1.3em;
+      }
+      button {
+        padding: 10px 10px 10px 10px;
+      }
+    }
+    &__bottom {
+      height: 88vh;
+      background-position: center;
+      object-fit: cover;
+    }
+  }
+}
+@media (min-width: 1140px) {
+  .aboutus {
+    &__top {
+      &-container {
+        &-offer {
+          font-size: 1.5em;
+        }
+        &--title {
+          font-size: 4em;
+        }
+        &--description {
+          font-size: 2em;
+        }
+      }
+      &-button {
+        font-size: 1.5em;
+      }
+      button {
+        padding: 12px 18px 12px 18px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .aboutus {
+    &__top {
+      &-container {
+        &-offer {
+          font-size: 2em;
+        }
+        &--title {
+          font-size: 7em;
+        }
+      }
+      &-button {
+        font-size: 1.8em;
+      }
+    }
+  }
+}
+// mansory/project
+
+@media (min-width: 576px) {
+  .project {
+    &__top {
+      padding: 5em 0 4em 11em;
+      &-project {
+        font-size: 1em;
+      }
+      &-title {
+        font-size: 3em !important;
+      }
+    }
+    &__container {
+      padding-bottom: 5em;
+      &-button {
+        padding: 12px 18px 12px 18px;
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+@media (min-width: 1140px) {
+  .project {
+    &__top {
+      padding: 12em 0 8em 20em;
+      &-project {
+        font-size: 1.5em;
+      }
+      &-title {
+        font-size: 5em !important;
+      }
+    }
+    &__container {
+      padding-bottom: 10em;
+      &-button {
+        padding: 12px 25px 12px 25px;
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+
+//banner
+
+@media (min-width: 576px) {
+}
+@media (min-width: 765px) {
+  .banner {
+    &__top {
+      padding: 0 5em;
+      &-container {
+        &--flex {
+          margin: 0 0 0 3.8em;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1110px) {
+  .banner {
+    padding: 5em !important;
+    margin: 5em 15em;
+    &__top {
+      &-container {
+        width: 100%;
+        &--title {
+          font-size: 3.6em !important;
+        }
+        &--flex {
+          display: flex;
+          justify-content: end;
+          width: 350px;
+        }
+        &--description {
+          font-size: 2.8em !important;
+        }
+      }
+      button {
+        font-size: 1.8em !important;
+      }
+    }
+  }
+}
+@media (min-width: 1110px) {
+  .banner {
+    padding: 5em !important;
+    margin: 5em 15em;
+    &__top {
+      width: 100%;
+      justify-content: space-between !important;
+
+      &-container {
+        &--title {
+          font-size: 3.6em !important;
+        }
+        &--flex {
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .banner {
+    &__top {
+      &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--flex {
+          margin-left: 15em;
         }
       }
     }

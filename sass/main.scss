@@ -357,13 +357,17 @@ a {
     &-button {
       width: 100%;
       margin-top: 2em;
-
       &--white {
         padding: 6px 12px 7px 12px;
         border-radius: 200px;
         border: 1px solid #ffffff;
         background-color: #1b5b3100;
         color: #ffffff;
+        transition: 0.3s;
+      }
+      &--white:hover {
+        background-color: #ffffff;
+        color: #1b5b31;
       }
     }
   }
@@ -394,14 +398,20 @@ a {
   &__container {
     width: 100%;
     display: flex;
+
     &-button {
       margin: 0 auto;
-      padding: 6px 6px 7px 12px;
+      padding: 12px 14px 12px 14px;
       border-radius: 200px;
       border: 1px solid #000000;
       background-color: #00000000;
       color: #000000;
       z-index: 2;
+    }
+    &-button:hover {
+      background-color: #1b5b31;
+      color: #ffffff;
+      border: 1px solid #1b5b31;
     }
   }
   .shadow {
@@ -420,38 +430,40 @@ a {
   }
 }
 
-.grid-item {
-  width: 200px;
-}
-.grid-item--width2 {
-  width: 400px;
-}
+// .grid-item {
+//   width: 200px;
+// }
+// .grid-item--width2 {
+//   width: 400px;
+// }
 .img-scale {
+  cursor: pointer;
   transition: transform 0.3s;
 }
 .img-scale:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 // banner
 
 .banner {
   background-color: #1b5b31;
   color: #ffffff;
-  margin: 0 2em;
+  margin: 0 5em;
   &__top {
     padding: 0 3em;
-    &-button {
-      &--white {
-        padding: 6px 12px 7px 12px;
-        border-radius: 200px;
-        border: 1px solid #ffffff;
-        background-color: #ffffff;
-        color: #1b5b31;
-      }
+    button {
+      transition: 0.3s;
+      padding: 6px 12px 7px 12px;
+      border-radius: 200px;
+      border: 1px solid #ffffff;
+      background-color: #ffffff;
+      color: #1b5b31;
     }
-  }
-  &__bottom {
-    background-image: url("../assets/china_small.jpg");
+    button:hover {
+      color: #ffffff;
+      background-color: #00000000;
+      border: 1px solid #ffffff;
+    }
   }
 }
 

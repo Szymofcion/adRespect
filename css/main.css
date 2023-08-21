@@ -350,6 +350,11 @@ a {
   border: 1px solid #ffffff;
   background-color: rgba(27, 91, 49, 0);
   color: #ffffff;
+  transition: 0.3s;
+}
+.aboutus__top-button--white:hover {
+  background-color: #ffffff;
+  color: #1b5b31;
 }
 .aboutus__bottom {
   height: 50vh;
@@ -381,12 +386,17 @@ a {
 }
 .project__container-button {
   margin: 0 auto;
-  padding: 6px 6px 7px 12px;
+  padding: 12px 14px 12px 14px;
   border-radius: 200px;
   border: 1px solid #000000;
   background-color: rgba(0, 0, 0, 0);
   color: #000000;
   z-index: 2;
+}
+.project__container-button:hover {
+  background-color: #1b5b31;
+  color: #ffffff;
+  border: 1px solid #1b5b31;
 }
 .project .shadow {
   position: absolute;
@@ -398,39 +408,35 @@ a {
   z-index: 1;
 }
 
-.grid-item {
-  width: 200px;
-}
-
-.grid-item--width2 {
-  width: 400px;
-}
-
 .img-scale {
+  cursor: pointer;
   transition: transform 0.3s;
 }
 
 .img-scale:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .banner {
   background-color: #1b5b31;
   color: #ffffff;
-  margin: 0 2em;
+  margin: 0 5em;
 }
 .banner__top {
   padding: 0 3em;
 }
-.banner__top-button--white {
+.banner__top button {
+  transition: 0.3s;
   padding: 6px 12px 7px 12px;
   border-radius: 200px;
   border: 1px solid #ffffff;
   background-color: #ffffff;
   color: #1b5b31;
 }
-.banner__bottom {
-  background-image: url("../assets/china_small.jpg");
+.banner__top button:hover {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
 }
 
 .footer {

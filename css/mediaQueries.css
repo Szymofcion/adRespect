@@ -31,6 +31,7 @@
     margin: 0.8em;
     list-style: none;
     color: black;
+    font-size: 1em;
   }
   .nav__desktop-item a {
     transition: 0.3s;
@@ -55,36 +56,33 @@
   }
 }
 @media (min-width: 720px) {
-  .nav__desktop-logo p {
-    margin-bottom: 0;
-  }
   .nav__desktop-item {
-    display: flex;
-    align-items: center;
-    margin: 0.8em;
-    list-style: none;
-    color: black;
-  }
-  .nav__desktop-item a {
-    transition: 0.3s;
-  }
-  .nav__desktop-item a:hover {
-    color: #1b5b31;
+    font-size: 1.2em;
+    margin: 0.5em 1.1em;
   }
   .nav__desktop-item--lists {
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s;
+    font-size: 1.2em;
+    margin: 0.5em 1.1em;
   }
-  .nav__desktop-item--lists .menu__dropdown {
-    display: none;
+}
+@media (min-width: 1140px) {
+  .nav__desktop-item {
+    font-size: 1.4em;
+    margin: 0.5em 2em;
   }
-  .nav__desktop-item--lists:hover {
-    color: #1b5b31;
+  .nav__desktop-item--lists {
+    font-size: 1.4em;
+    margin: 0.5em 2em;
   }
-  .nav__desktop-item .nav__item2 {
-    margin-right: 5em;
-    border: none;
+}
+@media (min-width: 1600px) {
+  .nav__desktop-item {
+    font-size: 1.4em;
+    margin: 0.5em 4em;
+  }
+  .nav__desktop-item--lists {
+    font-size: 1.4em;
+    margin-right: 4em;
   }
 }
 @media (min-width: 576px) {
@@ -186,5 +184,154 @@
   }
   .offer__bottom-box a {
     font-size: 2em;
+  }
+}
+@media (min-width: 576px) {
+  .aboutus {
+    height: 88vh;
+  }
+  .aboutus__top {
+    height: 88vh;
+  }
+  .aboutus__top-container-offer {
+    font-size: 1.2em;
+  }
+  .aboutus__top-container--title {
+    font-size: 3.5em;
+  }
+  .aboutus__top-container--description {
+    font-size: 1.4em;
+  }
+  .aboutus__top-button {
+    font-size: 1.3em;
+  }
+  .aboutus__top button {
+    padding: 10px 10px 10px 10px;
+  }
+  .aboutus__bottom {
+    height: 88vh;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 1140px) {
+  .aboutus__top-container-offer {
+    font-size: 1.5em;
+  }
+  .aboutus__top-container--title {
+    font-size: 4em;
+  }
+  .aboutus__top-container--description {
+    font-size: 2em;
+  }
+  .aboutus__top-button {
+    font-size: 1.5em;
+  }
+  .aboutus__top button {
+    padding: 12px 18px 12px 18px;
+  }
+}
+@media (min-width: 1600px) {
+  .aboutus__top-container-offer {
+    font-size: 2em;
+  }
+  .aboutus__top-container--title {
+    font-size: 7em;
+  }
+  .aboutus__top-button {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 576px) {
+  .project__top {
+    padding: 5em 0 4em 11em;
+  }
+  .project__top-project {
+    font-size: 1em;
+  }
+  .project__top-title {
+    font-size: 3em !important;
+  }
+  .project__container {
+    padding-bottom: 5em;
+  }
+  .project__container-button {
+    padding: 12px 18px 12px 18px;
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1140px) {
+  .project__top {
+    padding: 12em 0 8em 20em;
+  }
+  .project__top-project {
+    font-size: 1.5em;
+  }
+  .project__top-title {
+    font-size: 5em !important;
+  }
+  .project__container {
+    padding-bottom: 10em;
+  }
+  .project__container-button {
+    padding: 12px 25px 12px 25px;
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 765px) {
+  .banner__top {
+    padding: 0 5em;
+  }
+  .banner__top-container--flex {
+    margin: 0 0 0 3.8em;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1110px) {
+  .banner {
+    padding: 5em !important;
+    margin: 5em 15em;
+  }
+  .banner__top-container {
+    width: 100%;
+  }
+  .banner__top-container--title {
+    font-size: 3.6em !important;
+  }
+  .banner__top-container--flex {
+    display: flex;
+    justify-content: end;
+    width: 350px;
+  }
+  .banner__top-container--description {
+    font-size: 2.8em !important;
+  }
+  .banner__top button {
+    font-size: 1.8em !important;
+  }
+}
+@media (min-width: 1110px) {
+  .banner {
+    padding: 5em !important;
+    margin: 5em 15em;
+  }
+  .banner__top {
+    width: 100%;
+    justify-content: space-between !important;
+  }
+  .banner__top-container--title {
+    font-size: 3.6em !important;
+  }
+}
+@media (min-width: 1600px) {
+  .banner__top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner__top-container--flex {
+    margin-left: 15em;
   }
 }/*# sourceMappingURL=mediaQueries.css.map */

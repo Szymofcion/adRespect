@@ -48,7 +48,7 @@
           <p class="fs-2"><span class="fw-bold">giard</span>design</p>
         </div>
         <div class="nav__desktop-item">
-          <li class="nav__desktop-item--lists menu fs-4" href="">
+          <li class="nav__desktop-item--lists menu " href="">
             Oferta >
             <ul class="menu__dropdown">
               <a class="menu__dropdown-list" href="#main">oferta 1</a>
@@ -56,9 +56,9 @@
               <a class="menu__dropdown-list" href="#main">oferta 3</a>
             </ul>
           </li>
-          <a class="nav__desktop-item fs-4" href="#aboutus">O firmie</a>
-          <a class="nav__desktop-item fs-4" href="#project">Realizacje</a>
-          <a class="nav__desktop-item fs-4" href="#footer">Kontakt</a>
+          <a class="nav__desktop-item " href="#aboutus">O firmie</a>
+          <a class="nav__desktop-item " href="#project">Realizacje</a>
+          <a class="nav__desktop-item " href="#footer">Kontakt</a>
           <button class="nav__item2 button-magnifying">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
@@ -191,12 +191,12 @@
 
    
 
-    <section class="aboutus section mt-5" id="aboutus">
+    <section class="aboutus section mt-5 d-md-flex" id="aboutus">
       <div class="aboutus__bottom pl-5">
       </div>
-      <div class="aboutus__top pt-5">
+      <div class="aboutus__top  pt-5">
         <div class="aboutus__top-container">
-          <p>O firmie</p>
+          <p class="aboutus__top-container-offer">O firmie</p>
           <h2 class="aboutus__top-container--title fw-bold " data-aos="zoom-in-up"data-aos-duration="1100">
             Tworzymy <br />
             z <span class="fst-italic">pasją</span>
@@ -220,7 +220,7 @@
     <section class="project" id="project">
       <div class="project__top">
         <p class="project__top-project">Realizacje</p>
-        <h2 class="project__top-title fs-1 fw-bold" >Nasze <span class="fst-italic">projekty</span> </h2>
+        <h2 class="project__top-title fs-1 " >Nasze <span class="fst-italic">projekty</span> </h2>
       </div>
       <div class="project__bottom" id="masonry-container">
         <div class="grid-sizer"></div>
@@ -240,16 +240,19 @@
     </section>
     <section class="banner section mt-5 p-4" id="banner">
       <div class="banner__top pt-5">
-        <div class="banner__top-container mb-4">
+        <div class="banner__top-container mb-4 d-md-flex ">
           <h3 class="banner__top-container--title fs-1">
             Zostańmy w kontakcie! Znajdziesz nas na <br />
             <span class="fst-italic">Instagramie.</span>
           </h3>
-          <p class="banner__top-container--description"></p>
-          Śledź nasze najnowsze realizacje!
-        </div>
-        <div class="banner__top-button mb-5">
-          <button class="banner__top-button--white" data-aos="zoom-in" data-aos-duration="1200">Instagram</button>
+          <div class="banner__top-container--flex">
+            <p class="banner__top-container--description fs-3">
+            Śledź nasze najnowsze realizacje!
+             </p>
+            <div class="banner__top-button mb-5 ">
+              <button class="banner__top-button--white fs-5" data-aos="zoom-in" data-aos-duration="1200">Instagram</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

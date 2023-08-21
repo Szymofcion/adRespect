@@ -49,8 +49,8 @@ var macyInstance = Macy({
     700: 3,
   },
   margin: {
-    x: 20,
-    y: 20,
+    x: 45,
+    y: 45,
   },
 });
 newImgButton.addEventListener("click", () => {
