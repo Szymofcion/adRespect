@@ -105,7 +105,7 @@
     padding: 10px 10px 10px 10px;
   }
   .header__bottom {
-    height: 88vh;
+    height: 92vh;
     background-position: center;
     -o-object-fit: cover;
        object-fit: cover;
@@ -123,6 +123,9 @@
   }
   .header__top button {
     padding: 12px 18px 12px 18px;
+  }
+  .header__bottom {
+    background-image: url(../assets/garden_large.jpg);
   }
 }
 @media (min-width: 1600px) {
@@ -213,6 +216,7 @@
     background-position: center;
     -o-object-fit: cover;
        object-fit: cover;
+    background-image: url("../assets//china_large.jpg");
   }
 }
 @media (min-width: 1140px) {
@@ -230,6 +234,9 @@
   }
   .aboutus__top button {
     padding: 12px 18px 12px 18px;
+  }
+  .aboutus__bottom {
+    background-image: url("../assets//china_large.jpg");
   }
 }
 @media (min-width: 1600px) {

@@ -51,28 +51,36 @@ var macyInstance = Macy({
   container: container,
   mobileFirst: true,
   columns: 2,
+  waitForImages: true,
   breakAt: {
     700: 3,
   },
   margin: {
-    x: 45,
-    y: 45,
+    x: 30,
+    y: 10,
   },
 });
+macyInstance.runOnImageLoad(function () {
+  macyInstance.recalculate(true);
+}, true);
+macyInstance.recalculate(true);
 newImgButton.addEventListener("click", () => {
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     const newImage = document.createElement("img");
-    newImage.src = "https://picsum.photos/200/300?random=13";
+    newImage.src = `../assets/img${i}.jpg`;
     newImage.alt = "";
-    newImage.classList.add("project__bottom");
+    newImage.classList.add("block");
     newImage.addEventListener("click", () => {
       document.getElementById("modal-img").src = newImage.src;
       MicroModal.show("modal-image");
     });
     document.querySelector("#masonry-container").appendChild(newImage);
-    macyInstance.recalculate();
+    console.log(newImage.src);
   }
+  macyInstance.reInit();
 });
+addEventListener("load", macyInstance.reInit());
+// Przykład użycia:
 
 ///shadowMacy
 

@@ -162,7 +162,7 @@ a {
 
 .search-container {
   position: relative;
-  width: 300px;
+  width: 100px;
   margin: 0 auto;
 }
 
@@ -171,6 +171,9 @@ a {
   align-items: center;
   position: relative;
   overflow: hidden;
+}
+.search-wrapper .fa-search {
+  font-size: 1.4em;
 }
 
 .search-icon {
@@ -312,6 +315,7 @@ a {
   height: 50vh;
   width: 100%;
   background-size: cover;
+  background-image: url(../assets/garde_small.jpg);
 }
 .header__bottom-container {
   width: 100%;
@@ -419,6 +423,10 @@ a {
 .aboutus__bottom-container {
   width: 100%;
   height: 100%;
+}
+
+.block {
+  display: block;
 }
 
 .project {
