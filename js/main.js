@@ -59,7 +59,7 @@ var macyInstance = Macy({
   },
   margin: {
     x: 30,
-    y: 10,
+    y: 30,
   },
 });
 
@@ -74,10 +74,10 @@ newImgButton.addEventListener("click", () => {
   for (let i = 0; i < 5; i++) {
     const newImage = document.createElement("img");
     const newLink = document.createElement("a");
-    newLink.href = `./assets/img${i}.jpg`;
+    newLink.href = `../assets/img${i}.jpg`;
     newLink.classList.add("grid-item");
     newLink.setAttribute("data-fancybox", "gallery");
-    newImage.src = `./assets/img${i}.jpg`;
+    newImage.src = `../assets/img${i}.jpg`;
     newImage.alt = "randomowe zdjecie z neta";
     newImage.classList.add("block");
     newImage.classList.add("img-scale");
