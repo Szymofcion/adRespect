@@ -14,6 +14,7 @@
     display: none;
   }
   .nav__desktop {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,20 +41,42 @@
       a:hover {
         color: #1b5b31;
       }
-      &--lists {
-        text-decoration: none;
+      .menu {
+        display: inline-block;
+        line-height: 50px;
         cursor: pointer;
         transition: 0.3s;
-        .menu__dropdown {
-          display: none;
+        z-index: 100;
+        &__dropdown {
+          list-style: none;
+          position: absolute;
+          width: 150px;
+          &-list {
+            display: none;
+            opacity: 0;
+            text-align: center;
+            transition: 0.3s;
+            border-radius: 15px;
+          }
+          &-list:hover,
+          &-list:active {
+            color: black;
+            background-color: #1b5b31bb;
+          }
         }
       }
-      &--lists:hover {
-        color: #1b5b31;
+      .menu:hover {
+        color: #000000;
       }
-      .nav__item2 {
-        margin-right: 5em;
-        border: none;
+      .menu:hover .menu__dropdown-list {
+        display: block;
+        animation: menuDesktop 0.5s forwards;
+      }
+      .menu:hover .menu__dropdown-list:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .menu:hover .menu__dropdown-list:nth-child(3) {
+        animation-delay: 0.3s;
       }
     }
   }
@@ -99,10 +122,9 @@
 
 @media (min-width: 576px) {
   .header {
-    height: 92vh;
+    height: 100vh;
     &__top {
-      height: 88vh;
-
+      height: 100vh;
       &-container {
         &--title {
           font-size: 3.5em;
@@ -119,15 +141,17 @@
       }
     }
     &__bottom {
-      height: 92vh;
+      height: 100vh;
       background-position: center;
       object-fit: cover;
+      padding-right: 2em;
     }
   }
 }
 @media (min-width: 1140px) {
   .header {
     &__top {
+      margin: 0 5em;
       &-container {
         &--title {
           font-size: 4em;
@@ -143,7 +167,7 @@
         padding: 12px 18px 12px 18px;
       }
     }
-    &__bottom{
+    &__bottom {
       background-image: url(../assets/garden_large.jpg);
     }
   }
@@ -152,6 +176,7 @@
 @media (min-width: 1600px) {
   .header {
     &__top {
+      margin: 0 0 0 9em;
       &-container {
         &--title {
           font-size: 7em;
@@ -465,6 +490,12 @@
         &--data {
           span {
             margin: 0 0 0 2em;
+            font-size: 1.2em;
+          }
+        }
+        &--link {
+          a {
+            font-size: 1.1em;
           }
         }
       }
@@ -473,6 +504,7 @@
         display: flex;
         flex-direction: row !important;
         justify-content: space-between !important;
+        font-size: 1.1em;
       }
     }
   }
@@ -490,18 +522,37 @@
           font-size: 1.2em;
         }
       }
-      &__bottom {
-        &-contact {
-          display: flex;
-          flex-direction: row !important;
-          justify-content: space-between !important;
-          width: 100%;
+    }
+    &__bottom {
+      &-contact {
+        &--link {
+          a {
+            margin: 0 2em 0 0;
+          }
         }
-        &-info {
-          padding-top: 9em;
-          display: flex;
-          flex-direction: row !important;
-          justify-content: space-between !important;
+        &--data {
+          span {
+            margin: 0 0 0 2em;
+            font-size: 1.4em;
+          }
+        }
+        &--link {
+          a {
+            font-size: 1.4em;
+            color: #ffffff;
+            transition: color 0.3s;
+            cursor: pointer;
+          }
+          a:hover {
+            color: #1b5b31;
+          }
+        }
+      }
+      &-info {
+        font-size: 1.4em;
+        img {
+          width: 100px;
+          height: 40px;
         }
       }
     }

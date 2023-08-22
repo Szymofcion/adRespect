@@ -4,9 +4,10 @@ const navBtn = document.querySelector(".burger-btn");
 const allNavItems = document.querySelectorAll(".nav__item");
 const navBtnBars = document.querySelector(".burger-btn__bars");
 const menuDropdown = document.querySelector(".menu__dropdown-list"); ///
-const magnify = document.querySelector(".fa-magnifying-glass"); ///
+const magnify = document.querySelector(".fa-search"); ///
 const container = document.querySelector(".project__bottom");
 const newImgButton = document.querySelector(".project__container-button");
+const navDesktop = document.querySelector(".nav__desktop");
 
 ///animacje
 
@@ -46,6 +47,7 @@ handleNavItemsAnimation();
 navBtn.addEventListener("click", handleNav);
 
 /// macy
+/// lightbox
 
 var macyInstance = Macy({
   container: container,
@@ -60,27 +62,36 @@ var macyInstance = Macy({
     y: 10,
   },
 });
+
 macyInstance.runOnImageLoad(function () {
   macyInstance.recalculate(true);
 }, true);
 macyInstance.recalculate(true);
 newImgButton.addEventListener("click", () => {
+  newImgButton.disabled = true;
+  newImgButton.classList.add("disabled-button");
+
   for (let i = 0; i < 5; i++) {
     const newImage = document.createElement("img");
+    const newLink = document.createElement("a");
+    newLink.href = `./assets/img${i}.jpg`;
+    newLink.classList.add("grid-item");
+    newLink.setAttribute("data-fancybox", "gallery");
     newImage.src = `../assets/img${i}.jpg`;
-    newImage.alt = "";
+    newImage.alt = "randomowe zdjecie z neta";
     newImage.classList.add("block");
-    newImage.addEventListener("click", () => {
-      document.getElementById("modal-img").src = newImage.src;
-      MicroModal.show("modal-image");
-    });
-    document.querySelector("#masonry-container").appendChild(newImage);
-    console.log(newImage.src);
+    newImage.classList.add("img-scale");
+    newImage.setAttribute("data-lightbox", "image-set");
+    container.appendChild(newLink);
+    newLink.appendChild(newImage);
   }
-  macyInstance.reInit();
+
+  macyInstance.runOnImageLoad(function () {
+    macyInstance.recalculate(true, true);
+    const evt = new Event("resize");
+    window.dispatchEvent(evt);
+  }, true);
 });
-addEventListener("load", macyInstance.reInit());
-// Przykład użycia:
 
 ///shadowMacy
 
@@ -94,9 +105,12 @@ btnShadow.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide");
+  const headerTop = document.querySelector("header__top"); ///?
+  const headerBottom = document.querySelector("header__bottom"); ///?
   const prevButton = document.getElementById("prev");
   const nextButton = document.getElementById("next");
   let currentSlide = 0;
+  console.log(slides);
 
   function showSlide(slideIndex) {
     if (slideIndex < 0) {
@@ -152,4 +166,19 @@ searchInput.addEventListener("blur", () => {
   }
 });
 
-/// lightbox
+const searchWrapper2 = document.querySelector(".search-wrapper2");
+const searchIcon2 = document.querySelector(".search-icon2");
+const searchInput2 = document.querySelector(".search-input2");
+
+searchWrapper2.addEventListener("click", () => {
+  searchWrapper2.classList.add("active");
+  searchInput2.classList.add("active");
+  searchInput2.focus();
+});
+
+searchInput2.addEventListener("blur", () => {
+  if (searchInput2.value === "") {
+    searchWrapper2.classList.remove("active");
+    searchInput2.classList.remove("active");
+  }
+});

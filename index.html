@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script
-      defer
-      src="https://kit.fontawesome.com/d8a1b0ce33.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/mediaQueries.css" />
@@ -30,14 +39,23 @@
         <li class="nav__item2 menu" href="">
           Oferta >
           <ul class="menu__dropdown">
-            <a class="menu__dropdown-list" href="#main">oferta 1</a>
-            <a class="menu__dropdown-list" href="#main">oferta 2</a>
-            <a class="menu__dropdown-list" href="#main">oferta 3</a>
+            <li class="menu__dropdown-list" href="#main">oferta 1</li>
+            <li class="menu__dropdown-list" href="#main">oferta 2</li>
+            <li class="menu__dropdown-list" href="#main">oferta 3</li>
           </ul>
         </li>
         <a class="nav__item" href="#aboutus">O firmie</a>
         <a class="nav__item" href="#project">Realizacje</a>
         <a class="nav__item" href="#footer">Kontakt</a>
+        <div class="search-container">
+          <div class="search-wrapper">
+            <div class="search-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <input type="text" class="search-input" placeholder="Szukaj..." />
+            <div class="search-bar"></div>
+          </div>
+        </div>
       </div>
     </nav>
     <nav class="nav__desktop">
@@ -48,21 +66,20 @@
         <li class="nav__desktop-item--lists menu" href="">
           Oferta >
           <ul class="menu__dropdown">
-            <a class="menu__dropdown-list" href="#main">oferta 1</a>
-            <a class="menu__dropdown-list" href="#main">oferta 2</a>
-            <a class="menu__dropdown-list" href="#main">oferta 3</a>
+            <li class="menu__dropdown-list" href="#main">oferta 1</li>
+            <li class="menu__dropdown-list" href="#main">oferta 2</li>
+            <li class="menu__dropdown-list" href="#main">oferta 3</li>
           </ul>
         </li>
         <a class="nav__desktop-item" href="#aboutus">O firmie</a>
         <a class="nav__desktop-item" href="#project">Realizacje</a>
         <a class="nav__desktop-item" href="#footer">Kontakt</a>
-        <div class="search-container">
-          <div class="search-wrapper">
-            <div class="search-icon">
+        <div class="search-container2">
+          <div class="search-wrapper2">
+            <div class="search-icon2">
               <i class="fas fa-search"></i>
             </div>
-            <input type="text" class="search-input" placeholder="Szukaj..." />
-            <div class="search-bar"></div>
+            <input type="text" class="search-input2" placeholder="Szukaj..." />
           </div>
         </div>
       </div>
@@ -109,7 +126,7 @@
             </div>
           </div>
           <div class="header__bottom img-fluid">
-            <img class="header__bottom pr-5" />
+            <img class="header__bottom pr-5" alt="header img" />
           </div>
         </div>
         <div class="slide d-md-flex">
@@ -120,7 +137,7 @@
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
-                drugie
+                Drugie
               </h1>
               <p
                 class="header__top-container--description"
@@ -150,7 +167,11 @@
             </div>
           </div>
           <div class="header__bottom img-fluid">
-            <img src="./assets/garden.jpg" class="header__bottom pr-5" />
+            <img
+              src="./assets/img1.jpg"
+              class="header__bottom pr-5"
+              alt="header img ogród"
+            />
           </div>
         </div>
         <div class="controller">
@@ -284,12 +305,27 @@
       </div>
       <div class="project__bottom" id="masonry-container">
         <div class="grid-sizer"></div>
-        <img class="img-scale" src="./assets/img5.jpg" alt="" />
-        <img class="img-scale" src="./assets/img6.jpg" alt="" />
-        <img class="img-scale" src="./assets/img7.jpg" alt="" />
-        <img class="img-scale" src="./assets/img8.jpg" alt="" />
-        <img class="img-scale" src="./assets/img9.jpg" alt="" />
-        <img class="img-scale" src="./assets/img1.jpg" alt="" />
+        <a href="./assets/img6.jpg" class="grid-item" data-fancybox="gallery">
+          <img src="./assets/img6.jpg" alt="ogród" data-lightbox="image-set" />
+        </a>
+        <a href="./assets/img7.jpg" class="grid-item" data-fancybox="gallery">
+          <img src="./assets/img7.jpg" alt="ogród" data-lightbox="image-set" />
+        </a>
+        <a href="./assets/img8.jpg" class="grid-item" data-fancybox="gallery">
+          <img src="./assets/img8.jpg" alt="ogród" data-lightbox="image-set" />
+        </a>
+        <a href="./assets/img9.jpg" class="grid-item" data-fancybox="gallery">
+          <img src="./assets/img9.jpg" alt="ogród" data-lightbox="image-set" />
+        </a>
+        <a href="./assets/img10.jpg" class="grid-item" data-fancybox="gallery">
+          <img src="./assets/img10.jpg" alt="ogród" data-lightbox="image-set" />
+        </a>
+        <a href="./assets/img11.jpg" class="grid-item" data-fancybox="gallery">
+          <img src="./assets/img11.jpg" alt="ogród" data-lightbox="image-set" />
+        </a>
+        <a href="./assets/img12.jpg" class="grid-item" data-fancybox="gallery">
+          <img src="./assets/img12.jpg" alt="ogród" data-lightbox="image-set" />
+        </a>
       </div>
       <div class="project__container">
         <button class="project__container-button">
@@ -298,6 +334,7 @@
       </div>
       <div class="shadow"></div>
     </section>
+
     <section class="banner section mt-5 p-4" id="banner">
       <div class="banner__top pt-5">
         <div class="banner__top-container mb-4 d-md-flex">
@@ -367,6 +404,7 @@
             <span
               >made by
               <img
+                alt="logo"
                 class="footer__bottom-info--logo"
                 src="./assets/Zrzut ekranu 2023-08-20 135259.png"
             /></span>
@@ -374,6 +412,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -381,6 +422,11 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/d8a1b0ce33.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
