@@ -206,6 +206,9 @@
 
     &__bottom {
       &-box {
+        i {
+          font-size: 2em;
+        }
         h3 {
           font-size: 2em;
         }
@@ -243,6 +246,9 @@
       &-box {
         padding: 5em;
         margin: 0;
+        i {
+          font-size: 2.5em;
+        }
         h3 {
           font-size: 2.5em;
         }
@@ -425,12 +431,21 @@
 @media (min-width: 1600px) {
   .banner {
     &__top {
+      &-button {
+        button {
+          padding: 14px 35px 14px 35px;
+        }
+      }
       &-container {
         display: flex;
         justify-content: center;
         align-items: center;
         &--flex {
           margin-left: 15em;
+        }
+        &--description {
+          font-size: 2em !important;
+          margin-bottom: 1em;
         }
       }
     }
@@ -515,6 +530,12 @@
     &__top {
       padding: 0 12em 4em 12em;
       &-container {
+        &--flex {
+          padding: 12px 18px 12px 18px;
+          button {
+            padding: 12px 11px 12px 11px;
+          }
+        }
         &--title {
           font-size: 2em !important;
         }
@@ -559,6 +580,9 @@
         &--flex {
           font-size: 1.6em;
           padding: 12px 18px 12px 18px;
+          button {
+            padding: 16px 15px 16px 15px;
+          }
         }
       }
     }

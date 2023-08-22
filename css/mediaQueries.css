@@ -176,6 +176,9 @@
   .offer__top-description {
     font-size: 1.5em !important;
   }
+  .offer__bottom-box i {
+    font-size: 2em;
+  }
   .offer__bottom-box h3 {
     font-size: 2em;
   }
@@ -207,6 +210,9 @@
   .offer__bottom-box {
     padding: 5em;
     margin: 0;
+  }
+  .offer__bottom-box i {
+    font-size: 2.5em;
   }
   .offer__bottom-box h3 {
     font-size: 2.5em;
@@ -349,6 +355,9 @@
   }
 }
 @media (min-width: 1600px) {
+  .banner__top-button button {
+    padding: 14px 35px 14px 35px;
+  }
   .banner__top-container {
     display: flex;
     justify-content: center;
@@ -356,6 +365,10 @@
   }
   .banner__top-container--flex {
     margin-left: 15em;
+  }
+  .banner__top-container--description {
+    font-size: 2em !important;
+    margin-bottom: 1em;
   }
 }
 @media (min-width: 576px) {
@@ -418,6 +431,12 @@
   .footer__top {
     padding: 0 12em 4em 12em;
   }
+  .footer__top-container--flex {
+    padding: 12px 18px 12px 18px;
+  }
+  .footer__top-container--flex button {
+    padding: 12px 11px 12px 11px;
+  }
   .footer__top-container--title {
     font-size: 2em !important;
   }
@@ -446,5 +465,8 @@
   .footer__top-container--flex {
     font-size: 1.6em;
     padding: 12px 18px 12px 18px;
+  }
+  .footer__top-container--flex button {
+    padding: 16px 15px 16px 15px;
   }
 }/*# sourceMappingURL=mediaQueries.css.map */

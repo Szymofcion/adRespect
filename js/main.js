@@ -179,3 +179,14 @@ searchInput2.addEventListener("blur", () => {
     searchInput2.classList.remove("active");
   }
 });
+
+///spiner
+document.addEventListener("DOMContentLoaded", () => {
+  const spinnerElement = document.getElementById("spinner");
+  const contentElement = document.getElementById("body");
+
+  setTimeout(function () {
+    spinnerElement.style.display = "none";
+    contentElement.style.display = "block";
+  }, 1100);
+});
