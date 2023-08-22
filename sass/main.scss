@@ -415,8 +415,12 @@ a {
   height: 100%;
   overflow: hidden;
   &__top {
+    margin-top: 4em !important;
     display: flex;
     flex-direction: column;
+    &-title {
+      margin-bottom: 0.5em;
+    }
     &-offer {
       color: #1b5b31;
     }

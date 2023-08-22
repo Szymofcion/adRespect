@@ -407,8 +407,12 @@ a {
   overflow: hidden;
 }
 .offer__top {
+  margin-top: 4em !important;
   display: flex;
   flex-direction: column;
+}
+.offer__top-title {
+  margin-bottom: 0.5em;
 }
 .offer__top-offer {
   color: #1b5b31;
