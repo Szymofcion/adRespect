@@ -641,6 +641,38 @@ a {
   width: 100%;
   margin-top: 2em;
 }
+.footer__bottom-contact {
+  width: 100%;
+}
+.footer__bottom-contact--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__bottom-contact--link a {
+  margin-right: 0.9em;
+  color: #ffffff;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.footer__bottom-contact--link a:hover {
+  color: #1b5b31;
+}
+.footer__bottom-contact--data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__bottom-contact--data span {
+  margin-right: 0.9em;
+}
+.footer__bottom-info {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footer__bottom-info--logo {
   width: 6rem;
   height: 2rem;

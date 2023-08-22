@@ -121,7 +121,7 @@
     font-size: 1.4em;
   }
   .header__top-button {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   .header__top button {
     padding: 10px 10px 10px 10px;
@@ -433,12 +433,6 @@
   }
   .footer__bottom-contact--link a {
     font-size: 1.4em;
-    color: #ffffff;
-    transition: color 0.3s;
-    cursor: pointer;
-  }
-  .footer__bottom-contact--link a:hover {
-    color: #1b5b31;
   }
   .footer__bottom-info {
     font-size: 1.4em;

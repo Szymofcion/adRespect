@@ -105,14 +105,11 @@ btnShadow.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide");
-  const headerTop = document.querySelector("header__top"); ///?
-  const headerBottom = document.querySelector("header__bottom"); ///?
   const prevButton = document.getElementById("prev");
   const nextButton = document.getElementById("next");
   let currentSlide = 0;
-  console.log(slides);
 
-  function showSlide(slideIndex) {
+  const showSlide = (slideIndex) => {
     if (slideIndex < 0) {
       slideIndex = slides.length - 1;
     } else if (slideIndex >= slides.length) {
@@ -128,15 +125,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     currentSlide = slideIndex;
-  }
+  };
 
-  function prevSlide() {
+  const prevSlide = () => {
     showSlide(currentSlide - 1);
-  }
+  };
 
-  function nextSlide() {
+  const nextSlide = () => {
     showSlide(currentSlide + 1);
-  }
+  };
 
   prevButton.addEventListener("click", prevSlide);
   nextButton.addEventListener("click", nextSlide);

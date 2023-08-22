@@ -134,7 +134,7 @@
         }
       }
       &-button {
-        font-size: 1.3em;
+        font-size: 1.2em;
       }
       button {
         padding: 10px 10px 10px 10px;
@@ -539,12 +539,6 @@
         &--link {
           a {
             font-size: 1.4em;
-            color: #ffffff;
-            transition: color 0.3s;
-            cursor: pointer;
-          }
-          a:hover {
-            color: #1b5b31;
           }
         }
       }
