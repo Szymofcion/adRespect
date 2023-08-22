@@ -77,7 +77,7 @@ newImgButton.addEventListener("click", () => {
     newLink.href = `./assets/img${i}.jpg`;
     newLink.classList.add("grid-item");
     newLink.setAttribute("data-fancybox", "gallery");
-    newImage.src = `../assets/img${i}.jpg`;
+    newImage.src = `./assets/img${i}.jpg`;
     newImage.alt = "randomowe zdjecie z neta";
     newImage.classList.add("block");
     newImage.classList.add("img-scale");
